@@ -1,0 +1,16 @@
+jira.Filter Filter_for_AT_board@s {
+  name = "Filter for AT board"
+  owner = {
+    id = "712020:f6e6ec4c-be08-493d-a492-e615ead43512"
+    displayName = "Cidoni Brind"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.App_Team@s.key } ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+  sharePermissions = [
+    {
+      type = "project"
+      project = {
+        id = jira.Project.instance.App_Team@s
+      }
+    },
+  ]
+}

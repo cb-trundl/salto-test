@@ -1,0 +1,15 @@
+jira.Project App_Team@s {
+  key = "AT"
+  description = ""
+  name = "App Team"
+  projectTypeKey = "software"
+  workflowScheme = jira.WorkflowScheme.instance.AT__Software_Simplified_Workflow_Scheme@fssss
+  permissionScheme = jira.PermissionScheme.instance.AT_software_permission_scheme@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.AT__Scrum_Issue_Type_Screen_Scheme@fsssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.AT__Scrum_Issue_Type_Scheme@fssss
+  leadAccountId = {
+    id = "712020:f6e6ec4c-be08-493d-a492-e615ead43512"
+    displayName = "Cidoni Brind"
+  }
+}

@@ -1,0 +1,42 @@
+jira.Board AT_board@s {
+  name = "AT board"
+  type = "scrum"
+  admins = {
+    users = [
+      {
+        id = "712020:f6e6ec4c-be08-493d-a492-e615ead43512"
+        displayName = "Cidoni Brind"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.App_Team@s
+  }
+  filterId = jira.Filter.instance.Filter_for_AT_board@s
+  columnConfig = {
+    columns = [
+      {
+        name = "To Do"
+        statuses = [
+          jira.Status.instance.to_do@s,
+        ]
+      },
+      {
+        name = "In Progress"
+        statuses = [
+          jira.Status.instance.in_progress@s,
+        ]
+      },
+      {
+        name = "Done"
+        statuses = [
+          jira.Status.instance.done,
+        ]
+      },
+    ]
+    constraintType = "none"
+  }
+  estimation = {
+    field = jira.Field.instance.Story_Points__float__c@suuuu
+  }
+}
